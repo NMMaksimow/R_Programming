@@ -25,4 +25,9 @@ install_from_swirl("R Programming")
 
 #R is one-based indexing language NB!
 
-
+#Operations on directories
+?dir.exists()
+?dir.create()
+?dir()
+?unlink()
+?list.dirs()
