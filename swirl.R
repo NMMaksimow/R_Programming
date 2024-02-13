@@ -31,3 +31,25 @@ install_from_swirl("R Programming")
 ?dir()
 ?unlink()
 ?list.dirs()
+
+#& versus &&, | versus ||
+TRUE & c(TRUE, TRUE, TRUE)
+TRUE & c(FALSE, FALSE, TRUE)
+TRUE && c(FALSE, FALSE, TRUE)
+
+#logical functions
+isTRUE(FALSE)
+identical(TRUE, FALSE)
+xor(TRUE, 6 == 6)
+xor(FALSE, TRUE)
+which(c(TRUE, FALSE, TRUE))
+any(TRUE, FALSE, FALSE)
+all(TRUE, TRUE, FALSE)
+all(TRUE, TRUE, TRUE)
+
+#functions can be passed as arguments to another function
+
+my_function <- function(my_vector){
+  sum(my_vector)/length(my_vector)
+}
+args(my_function) #returns arguments that can be passed to the function
